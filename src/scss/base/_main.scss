@@ -78,6 +78,12 @@ img{
     flex-direction: column;
     justify-content: space-between;
 }
+.contact-info{
+    a{
+	color: $blue;
+	text-decoration: underline;
+    }
+}
 .dashboard-menu{
     flex-direction: column;
     border-bottom: 1px solid #1e1e1e;
@@ -125,9 +131,13 @@ img{
 	.nav-item + .nav-item{
 	    border-left: 1px solid #292a2a;
 	}
+	.icon{
+	    font-size: 1rem;
+	}
 	.nav-link {
 	    padding-right: 1rem;
 	    padding-left: 1rem;
+	    font-size: rem(14px);
 	}
     }
     .badge{
