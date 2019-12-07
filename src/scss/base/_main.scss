@@ -1,7 +1,25 @@
 .btn-primary {
     color: $white;
 }
+ul{
+    padding-left: 0;
+    list-style: none;
+    li{
+	padding-left: 1.5rem;
+	position: relative;
+	margin-bottom: 1rem;
+	&::before {
+	    content: "\2022";
+	    color: $white;
+	    font-weight: bold;
+	    display: inline-block;
+	    width: 1em;
+	    position: absolute;
+	    left: 0;
 
+	}
+    }
+}
 .img-bg{
     background: url(../img/main-bg.jpg) 50% no-repeat;
     background-size: cover;
