@@ -1,7 +1,7 @@
 .btn-primary {
     color: $white;
 }
-ul{
+ul:not(.nav){
     padding-left: 0;
     list-style: none;
     li{
@@ -48,5 +48,40 @@ img{
 	height: 1px;
 	width: rem(206px);
 	background-color: $blue;
+    }
+}
+/**/
+#wrapper {
+    display: flex;
+    #content-wrapper {
+	width: 100%;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	#content {
+	    flex: 1 0 auto;
+	}
+    }
+}
+.sidebar {
+    width: 6.5rem;
+    min-height: 100vh;
+    background-color: #292a2a;
+    padding: rem(70px 16px 16px);
+}
+.dashboard-menu{
+    flex-direction: column;
+    li{
+	padding: .5rem 0;
+    }
+    a{
+	color: #999999;
+    }
+    .home-link{
+	a{
+	    color: #fff;
+	}
+	border-top: 1px solid #1e1e1e;
+	border-bottom: 1px solid #1e1e1e;
     }
 }

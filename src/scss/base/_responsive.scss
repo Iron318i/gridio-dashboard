@@ -15,6 +15,9 @@
 	    padding: rem(16px 30px);
 	}
     }
+    .sidebar {
+	width: rem(224px);
+    }
 }
 @include media-breakpoint-up(lg) {
     html{
