@@ -24,6 +24,12 @@ img{
     max-width: 100%;
     height: auto;
 }
+.icon {
+    width: 1em;
+    height: 1em;
+    margin: 0 .5em;
+    vertical-align: text-top;
+}
 .text-center{
     .form-control{
 	text-align: center;
@@ -68,14 +74,37 @@ img{
     min-height: 100vh;
     background-color: #292a2a;
     padding: rem(70px 16px 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .dashboard-menu{
     flex-direction: column;
+    border-bottom: 1px solid #1e1e1e;
+    padding-bottom: 2rem;
     li{
-	padding: .5rem 0;
+	padding: rem(10px 0);
+	&.active,
+	&:hover{
+	    a{
+		color: $white;
+		background-color: #1e1e1e;
+		.icon{
+		    color: $blue;
+		}
+	    }
+	}
     }
     a{
 	color: #999999;
+	display: inline-block;
+	width: 100%;
+	border-radius: 2rem;
+	padding: rem(6px);
+	transition: all .3s linear;
+	.icon{
+	    transition: all .3s linear;
+	}
     }
     .home-link{
 	a{
