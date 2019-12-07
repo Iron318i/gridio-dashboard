@@ -18,6 +18,10 @@
     .sidebar {
 	width: rem(224px);
     }
+    .container-fluid {
+	padding-left: rem(50px);
+	padding-right: rem(50px);
+    }
 }
 @include media-breakpoint-up(lg) {
     html{

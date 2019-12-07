@@ -5,10 +5,40 @@ bodyClass: "modal-open"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <div id="wrapper">
-<%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    <%= _.template(require('./../includes/sidebar.html').default)(data) %>
     <div id="content-wrapper">
 	<div id="content">
-	<%= _.template(require('./../includes/topbar.html').default)(data) %>
+	    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+	    <div class="container-fluid">
+		<div class="top-heading row">
+		    <div class="logo col-auto pr-4">
+			<img src="./img/logo-119x92.png" srcset="./img/retina/logo-119x92x2.png 2x" alt="PKS">
+		    </div>
+		    <div class="custom-control custom-switch col-auto">
+			<input type="checkbox" class="custom-control-input" id="HolidayMode" checked="">
+			<label class="custom-control-label" for="HolidayMode"><span class="ml-2">Holiday mode</span></label>
+		    </div>
+		    <div class="custom-control custom-switch col-auto">
+			<input type="checkbox" class="custom-control-input" id="24OptOut">
+			<label class="custom-control-label" for="24OptOut"><span class="ml-2">24h opt-out</span></label>
+		    </div>
+		    <div class="col-auto"><a href="#">Monthly reports</a></div>
+		    <div class="col-auto"><a href="#">FAQ</a></div>
+		</div>
+		<div class="bottom-headong">
+		    <div class="row">
+			<div class="col-md-4">
+			    <h1 class="h1">Contribution (KWh)</h1>
+			</div>
+			<div class="col-md-8">
+			    <button type="button" class="btn btn-outline-primary">ast 24hr</button>
+			    <button type="button" class="btn btn-outline-primary">last 1 week</button>
+			    <button type="button" class="btn btn-primary">last 1 month</button>
+			    <button type="button" class="btn btn-outline-primary">last year</button>
+			</div>
+		    </div>
+		</div>
+	    </div>
 	</div>
     </div>
 </div>

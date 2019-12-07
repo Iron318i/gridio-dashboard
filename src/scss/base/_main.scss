@@ -1,6 +1,21 @@
 .btn-primary {
     color: $white;
 }
+.custom-switch {
+    line-height: rem(22px);
+    .custom-control-label:before {
+	background-color: #1e1e1e;
+	border: 1px solid #1e1e1e;
+    }
+    .custom-control-label:after{
+	top: 3px;
+	left: -52px;
+	background-color: #414141;
+    }
+    .custom-control-input:checked~.custom-control-label:after {
+	background-color: #fff;
+    }
+}
 ul.list-style{
     padding-left: 0;
     list-style: none;
@@ -156,5 +171,15 @@ img{
 		color: #fff;
 	    }
 	}
+    }
+}
+.top-heading{
+    padding: 1rem 0;
+    align-items: center;
+    .custom-control-label{
+	margin-left: 1rem;
+    }
+    .col-auto + .col-auto{
+	margin-left: 2rem;
     }
 }

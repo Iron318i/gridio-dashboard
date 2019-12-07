@@ -83,6 +83,13 @@ $input-bg: $black;
 $input-border-color: #e6e6e6;
 
 $input-placeholder-color: #b3b3b3;
+
+//$custom-control-indicator-bg: #1e1e1e;
+//$custom-control-indicator-border-color: #1e1e1e;
+$custom-switch-indicator-size: rem(14px);
+$custom-control-indicator-size: rem(22px);
+$custom-switch-width: rem(48px);
+$custom-switch-indicator-border-radius: 2rem;
 // Cards
 $spacers: ();
 // stylelint-disable-next-line scss/dollar-variable-default
