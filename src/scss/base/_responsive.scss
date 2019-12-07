@@ -1,4 +1,19 @@
+@include media-breakpoint-up(sm) {
+    .modal-welcome{
+	.btn{
+	    min-width: 400px;
+	}
+    }
+}
+@include media-breakpoint-up(md) {
+    html{
+	font-size: 14px;
+    }
+}
 @include media-breakpoint-up(lg) {
+    html{
+	font-size: 16px;
+    }
     .modal-lg{
 	.modal-body{
 	    padding: rem(20px 43px);
