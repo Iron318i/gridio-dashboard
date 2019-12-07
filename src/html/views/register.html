@@ -5,20 +5,22 @@ bodyClass: "modal-open"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="modal d-block img-bg">
+<div class="register modal d-block img-bg">
     <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
 	<div class="modal-content">
 	    <div class="modal-body text-center">
-		<h1 class="h1 text-center">Register</h1>
-		<div class="form-group">
+		<p><img src="./img/main-logo.png" srcset="./img/retina/main-logo-2x.png 2x" alt="PKS"></p>
+		<h1 class="h1 text-center" style="margin-top: -50px;">Register</h1>
+		<div class="form-group mb-3">
 		    <input class="form-control form-control-lg" type="text" placeholder="E-mail">
 		</div>
-		<div class="form-group">
+		<div class="form-group mb-3">
 		    <input class="form-control form-control-lg" type="text" placeholder="Password">
 		</div>
-		<div class="form-group">
+		<div class="form-group mb-4">
 		    <a href="#" class="btn btn-block btn-lg btn-primary">Register</a>
 		</div>
+		<p><img src="./img/powered.png" srcset="./img/retina/powered-2x.png 2x" alt="Virtual Power by GridIO"></p>
 	    </div>
 	</div>
     </div>

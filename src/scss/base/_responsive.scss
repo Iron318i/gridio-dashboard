@@ -9,6 +9,12 @@
     html{
 	font-size: 14px;
     }
+    .modal-sm {
+	max-width: 460px;
+	.modal-body{
+	    padding: rem(16px 30px);
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     html{
