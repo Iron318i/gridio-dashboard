@@ -7,8 +7,22 @@
     background-size: cover;
 }
 .modal-welcome{
+    color: #b3b3b3;
     font-size: rem(14px);
     .btn{
 	min-width: 400px;
+    }
+}
+.decor{
+    position: relative;
+    padding-bottom: rem(7px);
+    &:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	width: rem(206px);
+	background-color: $blue;
     }
 }
