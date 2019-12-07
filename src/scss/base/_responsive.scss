@@ -1,7 +1,7 @@
 @include media-breakpoint-up(lg) {
     .modal-lg{
 	.modal-body{
-	    padding: 1rem rem(43px);
+	    padding: rem(20px 43px);
 	}
     }
 }
