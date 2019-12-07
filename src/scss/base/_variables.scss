@@ -75,7 +75,13 @@ $headings-color: $white;
 $btn-font-weight: 300;
 
 $input-btn-padding-y-lg: rem(10px);
-$input-btn-padding-x-lg: 4rem;
+$btn-padding-x-lg:  4rem;
+
+$input-color: $white;
+$input-bg: $black;
+$input-border-color: #e6e6e6;
+
+$input-placeholder-color: #b3b3b3;
 // Cards
 $spacers: ();
 // stylelint-disable-next-line scss/dollar-variable-default

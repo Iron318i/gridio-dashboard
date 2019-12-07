@@ -5,8 +5,23 @@ bodyClass: "modal-open"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container">
-
+<div class="modal d-block img-bg">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+	<div class="modal-content">
+	    <div class="modal-body text-center">
+		<h1 class="h1 text-center">Register</h1>
+		<div class="form-group">
+		    <input class="form-control form-control-lg" type="text" placeholder="E-mail">
+		</div>
+		<div class="form-group">
+		    <input class="form-control form-control-lg" type="text" placeholder="Password">
+		</div>
+		<div class="form-group">
+		    <a href="#" class="btn btn-block btn-lg btn-primary">Register</a>
+		</div>
+	    </div>
+	</div>
+    </div>
 </div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
