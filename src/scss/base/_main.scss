@@ -77,6 +77,7 @@ img{
 /**/
 #wrapper {
     display: flex;
+    position: relative;
     #content-wrapper {
 	width: 100%;
 	overflow-x: hidden;
@@ -88,13 +89,19 @@ img{
     }
 }
 .sidebar {
-    width: 6.5rem;
+    position: relative;
+    width: 14rem;
     min-height: 100vh;
     background-color: #292a2a;
     padding: rem(70px 16px 16px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    .sidebar-toggler.mobile{
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    }
 }
 .contact-info{
     a{
@@ -175,14 +182,14 @@ img{
 	    }
 	}
     }
-    .sidebar-toggler{
-	background: none;
-	border: 0 none;
-	padding: 0;
-	.icon{
-	    color: #4f4f4f;
-	    font-size: rem(18px);
-	}
+}
+.sidebar-toggler{
+    background: none;
+    border: 0 none;
+    padding: 0;
+    .icon{
+	color: #4f4f4f;
+	font-size: rem(18px);
     }
 }
 .top-heading{

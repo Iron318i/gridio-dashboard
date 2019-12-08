@@ -4,6 +4,11 @@
 	    min-width: 400px;
 	}
     }
+    .sidebar {
+	.sidebar-toggler.mobile{
+	    display: none;
+	}
+    }
 }
 @include media-breakpoint-up(md) {
     html{
@@ -14,9 +19,6 @@
 	.modal-body{
 	    padding: rem(16px 30px);
 	}
-    }
-    .sidebar {
-	width: rem(224px);
     }
     .container-fluid {
 	padding-left: rem(50px);
@@ -49,6 +51,25 @@
     .top-heading{
 	.col-auto{
 	    margin-bottom: 1rem;
+	}
+    }
+    .bottom-heading{
+	.btn{
+	    margin-bottom: 1rem;
+	}
+    }
+}
+@include media-breakpoint-down(md) {
+    .sidebar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	&.show{
+	    display: none;
+	}
+	&.collapse:not(.show) {
+	    display: flex;
 	}
     }
 }
