@@ -33,3 +33,17 @@
 	}
     }
 }
+@include media-breakpoint-up(xl) {
+    .top-heading{
+	.col-auto + .col-auto{
+	    margin-left: 2rem;
+	}
+    }
+}
+@include media-breakpoint-down(lg) {
+    .top-heading{
+	.col-auto{
+	    margin-bottom: 1rem;
+	}
+    }
+}

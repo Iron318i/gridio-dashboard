@@ -175,14 +175,20 @@ img{
 	    }
 	}
     }
+    .sidebar-toggler{
+	background: none;
+	border: 0 none;
+	padding: 0;
+	.icon{
+	    color: #4f4f4f;
+	    font-size: rem(18px);
+	}
+    }
 }
 .top-heading{
     padding: 1rem 0;
     align-items: center;
     .custom-control-label{
 	margin-left: 1rem;
-    }
-    .col-auto + .col-auto{
-	margin-left: 2rem;
     }
 }
