@@ -8,8 +8,13 @@
 // Color system
 $blue: #42b9f1;
 
+$gray-100: #4f4f4f;
+
 $black: #000;
 $white: #fff;
+
+
+$secondary:$gray-100;
 // Options
 // Spacing
 $spacer: rem(20px);
@@ -72,6 +77,9 @@ $headings-color: $white;
 // Pagination
 // Jumbotron
 // Form states and alerts
+$btn-border-radius: 1rem;
+$btn-font-size: rem(14px);
+
 
 $btn-font-weight: 300;
 

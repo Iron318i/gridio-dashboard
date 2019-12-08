@@ -1,6 +1,9 @@
 .btn-primary {
     color: $white;
 }
+.btn{
+    min-width: rem(116px);
+}
 .custom-switch {
     line-height: rem(22px);
     .custom-control-label:before {
