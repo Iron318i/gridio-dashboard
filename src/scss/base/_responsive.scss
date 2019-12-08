@@ -24,6 +24,14 @@
 	padding-left: rem(50px);
 	padding-right: rem(50px);
     }
+    .chart-wrp{
+	.btn-prev{
+	    transform: translateX(-100%)
+	}
+	.btn-next{
+	    transform: translateX(100%);
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     html{
