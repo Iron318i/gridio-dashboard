@@ -1,0 +1,72 @@
+<% var data = {
+title: "Sitemap | GridIO!",
+author: "Harrix",
+bodyClass: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div id="wrapper">
+    <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    <div id="content-wrapper">
+	<div id="content">
+	    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+	    <div class="container-fluid">
+		<div class="top-heading row">
+		    <div class="logo col-auto pr-4">
+			<img src="./img/logo-119x92.png" srcset="./img/retina/logo-119x92x2.png 2x" alt="PKS">
+		    </div>
+		    <div class="custom-control custom-switch col-auto">
+			<input type="checkbox" class="custom-control-input" id="HolidayMode" checked="">
+			<label class="custom-control-label" for="HolidayMode"><span class="ml-2">Holiday mode</span></label>
+		    </div>
+		    <div class="custom-control custom-switch col-auto">
+			<input type="checkbox" class="custom-control-input" id="24OptOut">
+			<label class="custom-control-label" for="24OptOut"><span class="ml-2">24h opt-out</span></label>
+		    </div>
+		    <div class="col-auto"><a href="#">Monthly reports</a></div>
+		    <div class="col-auto"><a href="#">FAQ</a></div>
+		</div>
+		<div class="bottom-heading">
+		    <div class="row">
+			<div class="col-xl-4">
+			    <h1 class="h1">Contribution (KWh)</h1>
+			</div>
+			<div class="col-xl-8 text-xl-right">
+			    <button type="button" class="btn btn-outline-secondary">ast 24hr</button>
+			    <button type="button" class="btn btn-outline-secondary">last 1 week</button>
+			    <button type="button" class="btn btn-primary">last 1 month</button>
+			    <button type="button" class="btn btn-outline-secondary">last year</button>
+			</div>
+		    </div>
+		</div>
+		<div class="chart-wrp" style="height: 240px; max-width: 1200px">
+		    <canvas id="chartContribution"></canvas>
+		</div>
+		<div class="data-box text-md-right text-center mt-4">
+		    <div class="row">
+			<div class="col-md-6 mb-4">
+			    <h3 class="h3">Accumulated earnings</h3>
+			    <div class="value text-primary">150 €</div>
+			</div>
+			<div class="col-md-6 mb-4">
+			    <h3 class="h3">Average power</h3>
+			    <div class="value text-danger">3.4 KW</div>
+			</div>
+			<div class="col-md-6 mb-4">
+			    <h3 class="h3">Average disconnection</h3>
+			    <div class="value text-warning">42 sec.</div>
+			</div>
+			<div class="col-md-6 mb-4">
+			    <h3 class="h3">Total disconnection rate</h3>
+			    <div class="value text-success">3.2%</div>
+			</div>
+		    </div>
+		</div>
+		<p class="my-4 text-center"><img src="./img/powered-big.png" srcset="./img/retina/powered-big-2x.png 2x" alt="Virtual Power by GridIO"></p>
+	    </div>
+	</div>
+    </div>
+</div>
+<script>
+
+</script>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
