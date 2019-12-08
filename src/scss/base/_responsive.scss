@@ -39,6 +39,11 @@
 	    margin-left: 2rem;
 	}
     }
+    .data-box{
+	.value{
+	    font-size: rem(48px);
+	}
+    }
 }
 @include media-breakpoint-down(lg) {
     .top-heading{

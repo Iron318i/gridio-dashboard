@@ -11,8 +11,8 @@
 	border: 1px solid #1e1e1e;
     }
     .custom-control-label:after{
-	top: 3px;
-	left: -52px;
+	top: rem(3px);
+	left: rem(-52px);
 	background-color: #414141;
     }
     .custom-control-input:checked~.custom-control-label:after {
@@ -200,10 +200,13 @@ img{
 	margin-bottom: .8rem;
     }
     .value{
-	font-size: rem(48px);
+	font-size: rem(30px);
     }
 }
 .chart-wrp{
     margin: 1rem auto;
     height: 280px;
+    canvas{
+	margin: 0 auto;
+    }
 }
