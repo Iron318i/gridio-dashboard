@@ -34,9 +34,6 @@
     }
 }
 @include media-breakpoint-up(lg) {
-    html{
-	font-size: 16px;
-    }
     .modal-lg{
 	.modal-body{
 	    padding: rem(20px 43px);
@@ -51,8 +48,38 @@
     }
     .data-box{
 	.value{
-	    font-size: rem(48px);
+	    font-size: rem(36px);
 	}
+    }
+}
+@media(min-width:1440px){
+    html{
+	font-size: 16px;
+    }
+}
+@media(min-width:1600px){
+    .data-box{
+	.col-md-6{
+	    margin-bottom: 2rem;
+	}
+    }
+    .data-box .value {
+	font-size: 3rem;
+    }
+}
+@media(max-width:1599px){
+    .top-heading{
+	.logo{
+	    img{
+		max-width: 65px;
+	    }
+	}
+    }
+
+}
+@media(max-width:1439px){
+    .chart-wrp {
+	height: 250px;
     }
 }
 @include media-breakpoint-down(lg) {
@@ -79,5 +106,8 @@
 	&.collapse:not(.show) {
 	    display: flex;
 	}
+    }
+    .chart-wrp {
+	height: 200px;
     }
 }
