@@ -89,6 +89,42 @@ import "chart.js";
 		    });
 		}
 	    });
+
+
+	    $(".chart-wrp .btn-next").on('click', function () {
+
+		chart.data = {
+		    labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'],
+		    datasets: [{
+			    //barThickness: 6,
+			    maxBarThickness: 60,
+			    label: '',
+			    backgroundColor: '#42b9f1',
+			    borderColor: '#42b9f1',
+			    data: [4, 4.8, 2.8, 2.4, 2, 0.8, 0.4, 0.8, 1.6, 2.4, 3.2, 3.6, 4, 2.8, 2.4, 2, 0.8, 0.4, 0.8, 1.6, 2.4, 3.2, 3.6, 0.8, 0.4, 0.8, 1.6, 2.4, 3.2, 1.6]
+			}]
+		};
+
+		chart.update();
+	    });
+	    $(".chart-wrp .btn-prev").on('click', function () {
+
+		chart.data = {
+		    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		    datasets: [{
+			    //barThickness: 6,
+			    maxBarThickness: 60,
+			    label: '',
+			    backgroundColor: '#42b9f1',
+			    borderColor: '#42b9f1',
+			    data: [4, 4.8, 2.8, 2.4, 2, 0.8, 0.4]
+			}]
+		};
+
+		chart.update();
+	    });
+
+
 	}//is("#chartMonthlyConsumption")
 
 //Contribution (KWh)
